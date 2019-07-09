@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "mkdir -p .next/serverless/pages/_next && mv .next/static .next/serverless/pages/_next/"
   },
   "keywords": [],
   "author": "",
