@@ -1,12 +1,12 @@
 
 [build]
   command = "yarn run build"
-  functions = "functions"
+  functions = ".next/serverless/pages"
   publish = ".next/serverless/pages"
 
 # Uncomment to use this redirect for Single Page Applications. 
 # Not needed for static site generators.
 [[redirects]]
  from = "/*"
- to = "/index.html"
+ to = "/.netlify/functions/:splat"
  status = 200
